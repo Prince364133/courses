@@ -1,81 +1,179 @@
-<html>
-<style>
-  /* Scoped CSS for the shop container */
-  .snaps-shop-container {
-    background: #5a37d9;
-    padding: 20px;
-  }
-
-  .snaps-shop-header img {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    display: block;
-    margin: 0 auto 20px;
-  }
-
-  .snaps-scroll-section {
-    display: flex;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 12px 0;
-    scroll-behavior: smooth;
-    white-space: nowrap;
-  }
-
-  .snaps-scroll-section::-webkit-scrollbar {
-    display: none;
-  }
-
-  .snaps-product-card {
-    min-width: 18%;
-    max-width: 18%;
-    flex: 0 0 auto;
-    background: #ffffff;
-    padding: 6px;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .snaps-product-card img {
-    width: 100%;
-    height: auto;
-    object-fit: contain;
-    border-radius: 6px;
-    background: white;
-    display: block;
-  }
-
-  @media (max-width: 768px) {
-    .snaps-product-card {
-      min-width: 40%;
-      max-width: 40%;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dhruv Rathee All Courses</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #0d0d0d;
+      color: white;
     }
-  }
-</style>
 
-<div class="snaps-shop-container">
-  <div class="snaps-shop-header">
-    <img src="https://rukminim2.flixcart.com/fk-p-flap/1200/167/image/45321b5dc3d35a9d.jpg?q=60" alt="Shop More Save More" loading="lazy">
+    .snaps-shop-container {
+      padding: 40px 20px;
+      background: rgba(255, 255, 255, 0.04);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 0 25px rgba(255, 215, 0, 0.15);
+      border-radius: 20px;
+      margin: 30px auto;
+      max-width: 1200px;
+      animation: fadeIn 1s ease;
+    }
+
+    .snaps-shop-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .snaps-shop-header img {
+      width: 100%;
+      max-width: 900px;
+      height: auto;
+      border-radius: 15px;
+      animation: scaleIn 1.3s ease-in-out;
+    }
+
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      color: gold;
+      margin-bottom: 20px;
+    }
+
+    .instructions {
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 30px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .instructions strong {
+      color: gold;
+    }
+
+    .snaps-scroll-section {
+      display: flex;
+      overflow-x: auto;
+      gap: 20px;
+      padding: 12px 0;
+      scroll-behavior: smooth;
+      white-space: nowrap;
+    }
+
+    .snaps-scroll-section::-webkit-scrollbar {
+      display: none;
+    }
+
+    .snaps-product-card {
+      min-width: 250px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 10px;
+      transition: transform 0.3s ease;
+      flex: 0 0 auto;
+      cursor: pointer;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(10px);
+    }
+
+    .snaps-product-card:hover {
+      transform: scale(1.05);
+    }
+
+    .snaps-product-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: gold;
+      color: black;
+      font-weight: bold;
+      padding: 12px 18px;
+      border: none;
+      border-radius: 50px;
+      font-size: 16px;
+      cursor: pointer;
+      box-shadow: 0 0 20px gold;
+      z-index: 999;
+      transition: 0.3s ease;
+    }
+
+    .whatsapp-btn:hover {
+      background: #ffd700cc;
+    }
+
+    .terms {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 0.95rem;
+      color: #ccc;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes scaleIn {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .snaps-product-card {
+        min-width: 80%;
+      }
+      .title {
+        font-size: 1.8rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="snaps-shop-container">
+    <div class="title">🚀 Dhruv Rathee - All ChatGPT Courses</div>
+
+    <div class="snaps-shop-header">
+      <img src="img4" alt="Dhruv Rathee" loading="lazy">
+    </div>
+
+    <div class="instructions">
+      <strong>Steps to Enroll:</strong>
+      <ol>
+        <li>Click on your favorite course below 👇</li>
+        <li>Check course details and price (₹400 per course)</li>
+        <li>Send payment screenshot on WhatsApp</li>
+        <li>Get access within <strong>10 minutes</strong></li>
+      </ol>
+    </div>
+
+    <div class="snaps-scroll-section">
+      <a class="snaps-product-card" href="https://prince364133.github.io/Chatgpt-course-/" target="_blank">
+        <img src="img1" alt="Course 1">
+      </a>
+      <a class="snaps-product-card" href="https://prince364133.github.io/time-management-course/" target="_blank">
+        <img src="img2" alt="Course 2">
+      </a>
+      <a class="snaps-product-card" href="https://prince364133.github.io/youtube-blueprint/" target="_blank">
+        <img src="img3" alt="Course 3">
+      </a>
+    </div>
+
+    <div class="terms">
+      💡 <strong>Refund Policy:</strong> If there’s any issue, your money will be refunded within 1 hour.
+    </div>
   </div>
 
-  
-  <div class="snaps-scroll-section">
-      <a href=""><img src="img1" loading="lazy"></a> 
-      <a href=""><img src="img2" loading="lazy"></a> 
-      <a href=""><img src="img3" loading="lazy"></a> 
-      </div>
-</div>
+  <button class="whatsapp-btn" onclick="window.open('https://wa.me/919891625865?text=Hi! I want to buy Dhruv Rathee\'s ChatGPT course.', '_blank')">💬 Help / Buy Now</button>
 
-<script>
-  // Hide only image boxes with broken image links, scoped to avoid interfering with other scripts
-  document.querySelectorAll('.snaps-product-card img').forEach(img => {
-    img.onerror = () => {
-      img.closest('.snaps-product-card').style.display = 'none';
-    };
-  });
-</script>
+</body>
 </html>
