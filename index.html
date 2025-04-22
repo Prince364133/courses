@@ -69,7 +69,7 @@
     }
 
     .snaps-product-card {
-      min-width: 250px;
+      display: inline-block;
       background: rgba(255, 255, 255, 0.1);
       border-radius: 14px;
       padding: 10px;
@@ -78,6 +78,7 @@
       cursor: pointer;
       box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(10px);
+      text-align: center;
     }
 
     .snaps-product-card:hover {
@@ -85,8 +86,11 @@
     }
 
     .snaps-product-card img {
-      width: 50%;
+      width: 100%;
+      height: auto;
       border-radius: 10px;
+      max-height: 100%;
+      object-fit: contain;
     }
 
     .whatsapp-btn {
@@ -174,6 +178,5 @@
   </div>
 
   <button class="whatsapp-btn" onclick="window.open('https://wa.me/919891625865?text=Hi! I want to buy Dhruv Rathee\'s ChatGPT course.', '_blank')">💬 Help / Buy Now</button>
-
 </body>
 </html>
